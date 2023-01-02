@@ -1,0 +1,181 @@
+.home-main {
+    background-attachment: fixed;
+    background-image: url('./man\ bg2.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+.context{
+    font-size: 23px;
+}
+.list {
+    color: #ddd;
+}
+
+
+td {
+    text-align: center;
+
+}
+
+.table-sytle {
+    color: #ddd;
+    box-sizing: content-box;
+    border: #ddd;
+    border-top-color: bisque;
+}
+
+.table,
+td,
+th {
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    border: fixed;
+}
+
+
+.semster {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.semster li {
+    display: inline-block;
+    font-size: medium;
+    padding: 0px;
+
+}
+
+.gradient-btn2 {
+    width: auto;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0072ff;
+    background-image: linear-gradient(to right,
+            #4162cf 0% #0072ff 51% #4162cf 100%);
+    animation: alternate;
+    transition-duration: .3ms;
+    border-radius: 10px;
+    background-size: 200% auto;
+    transition: .3s ease-in-out;
+    margin-top: 1.5rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+
+}
+
+.gradient-btn2:hover {
+    opacity: 2;
+}
+.gradient-btn3 {
+    width: 100%;
+    height: 45px;
+    
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0072ff;
+    background-image: linear-gradient(to right,
+            #4162cf 0% #0072ff 51% #4162cf 100%);
+    animation: alternate;
+    transition-duration: .3ms;
+    border-radius: 10px;
+    background-size: 200% auto;
+    transition: .3s ease-in-out;
+    margin-top: 1.5rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+
+}
+
+.gradient-btn3:hover {
+    opacity: 2;
+}
+
+.headings {
+    background-color: orange;
+}
+
+.body {
+    background-color: black;
+    background-position: 100%;
+
+}
+/*pre loader*/
+.preloader{
+    background: rgb(32, 29, 29) url("../images/pre\ loader.gif") no-repeat center center;
+    background-size: 100%;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+}
+
+@media screen and (max-width:600px) {
+    .overflow{
+        overflow-x: auto;
+    }
+     .brand .heading{
+       color: rgb(255, 255, 255);
+       
+       }
+    .table-sytle {
+        border-color: black;
+        color: black;
+
+    }
+    .context{
+        color: rgb(255, 255, 255);
+        border:1px solid rgb(251, 251, 251);
+        font-size: smaller;
+        
+    }
+    .table, th, td {
+        border: 1px solid rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+      }
+    .headings{
+        color: rgb(255, 255, 255);
+    }
+    
+     
+    .home-main {
+        background-color: rgb(255, 255, 255);
+     
+       
+    }
+    .body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .gradient-btn2 {
+        width: 140px;
+        height: 30px;
+    }
+    
+
+    .a {
+        font-size: x-small;
+    }
+
+    table,
+    td,
+    th {
+        font-size: xx-small;
+        width: 100%;
+
+    }
+    .semster{
+        width: 100%;
+    }
+
+
+
+}

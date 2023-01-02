@@ -1,0 +1,28 @@
+.data {
+    display: none;
+}
+
+.my-signin2 {
+    position: absolute;
+    top: 88%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+.partition{
+    color: white;
+    top: 86;
+    left: 50;
+}
+.fb-login-button{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+@media screen and (max-width:600px){
+    .my-signin2{
+        left: 29%;
+    }
+}

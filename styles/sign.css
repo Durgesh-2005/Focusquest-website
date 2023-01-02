@@ -1,0 +1,212 @@
+.home-main {
+    background-attachment: fixed;
+    background-image: url('./man\ bg2.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+
+section {
+    min-height: 100vh;
+    background: -webkit-linear-gradient(top, rgba(4, 21, 34, 0.5), rgba(88, 87, 31, 0.6)), url('../images/lock.jpg') no-repeat;
+    background: -moz-linear-gradient(top, rgba(4, 21, 34, 0.5), rgba(88, 87, 31, 0.6)), url('../images/lock.jpg') no-repeat;
+    background-size: cover;
+}
+
+.login {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    width: 500px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.login form {
+    margin-top: 1rem;
+}
+
+/*----------------------------------------1st item---------------------------------*/
+.login .form-item-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.login .form-item-1:nth-child(4) {
+    align-items: center;
+    flex-direction: row;
+}
+
+.login .form-item-1:nth-child(4) label {
+    margin-left: 5px;
+}
+
+.login .form-item-1 input {
+    height: 40px;
+    padding: 5px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid royalblue;
+    margin-left: 5px;
+    margin-block-start: 0px;
+    margin-inline-start: 62px;
+}
+
+/*--------------------------------2nd item---------------------------*/
+.login .form-item-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.login .form-item-2:nth-child(4) {
+    align-items: center;
+    flex-direction: row;
+}
+
+.login .form-item-2:nth-child(4) label {
+    margin-left: 5px;
+}
+
+.login .form-item-2 input {
+    height: 40px;
+    padding: 5px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid royalblue;
+    margin-left: 5px;
+    margin-inline-start: 30px;
+}
+
+/*--------------------------------3rd item------------------------------------------*/
+.login .form-item-3 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.login .form-item-3:nth-child(4) {
+    align-items: center;
+    flex-direction: row;
+}
+
+.login .form-item-3:nth-child(4) label {
+    margin-left: 5px;
+}
+
+.login .form-item-3 input {
+    height: 40px;
+    padding: 5px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid royalblue;
+    margin-left: 5px;
+    margin-inline-start: 63px;
+}
+
+/*--------------------------------------4th item-------------------------------------------*/
+.login .form-item-4 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.login .form-item-4:nth-child(4) {
+    align-items: center;
+    flex-direction: row;
+}
+
+.login .form-item-4:nth-child(4) label {
+    margin-left: 5px;
+}
+
+.login .form-item-4 input {
+    height: 40px;
+    padding: 5px 10px;
+    background: transparent;
+    outline: none;
+    border: 2px solid royalblue;
+    margin-left: 5px;
+    margin-block-start: 10px;
+    margin-inline-start: 0px;
+}
+
+/*LoGIN BUTTON*/
+.login form button {
+    background-color: royalblue;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin: 25px 0px;
+}
+
+.login form button:hover {
+    background-color: rgb(39, 73, 177);
+}
+
+.login form a {
+    background-color: royalblue;
+    color: #fff;
+    width: 100%;
+    height: 90px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.login form a:hover {
+    background-color: rgb(39, 73, 177);
+}
+
+@media screen and (max-width:600px) {
+    .login {
+        min-width: 20vh;
+        width: 350px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+.login form button{
+    margin: 20px 0px;
+}
+.login h1 {
+    font-size: 1.5rem;
+}
+.login .form-item-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 1px 0px;
+}
+.login .form-item-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 1px 0px;
+}
+.login .form-item-3 {
+    display: flex;
+    flex-direction: row;
+    margin: 1px 0px;
+}
+.login .form-item-1 input{
+    margin-inline-start: 35px;
+}
+.login .form-item-2 input{
+    margin-inline-start: 20px;
+}
+.login .form-item-3 input{
+    margin-inline-start: 0px;
+}}

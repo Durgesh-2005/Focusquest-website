@@ -1,0 +1,187 @@
+.home-main {
+    background-attachment: fixed;
+    background-image: url('./man\ bg2.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+
+.main-content {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content h1 {
+    font-size: 3rem;
+}
+
+.main-content p {
+    font-size: small;
+    margin: 0rem 0;
+}
+
+.gradient-btn1 {
+    width: 200px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0072ff;
+    background-image: linear-gradient(to right,
+            #4162cf 0% #0072ff 51% #4162cf 100%);
+    border-radius: 10px;
+    background-size: 200% auto;
+    transition: .3s ease-in-out;
+    margin-top: 1.5rem;
+}
+
+.gradient-btn1:hover {
+    background-position: right center;
+}
+.search-bar{
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+.search-bar input{
+ width: auto;
+ height: 40px;
+ padding: 5px 10px;
+ outline:invert;
+ margin-bottom: 5px;
+}
+.note{
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+
+/*------------Search CSS-----------*/
+.movingcontent{
+    max-height: 490px;
+    overflow-y: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+#myTable tr.header {
+  background-color: #0072ff;
+}
+
+#myTable tr.header{
+  background-color: #999999;
+}
+#myTable tr:hover{
+  background-color: rgb(210, 236, 236);
+}
+.downloadbtn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    outline: invert;
+    color: rgb(255, 255, 255);
+    background-color: rgb(120, 120, 120);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+  }
+  .downloadbtn:hover{
+    background-color: #0072ff;
+  }
+  
+
+@media screen and (max-width:600px) {
+    .search-icon{
+        color: black;
+    }
+   
+ .main-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .main-content p {
+        font-size: 1rem;
+    }
+
+    .gradient-btn1 {
+        width: 175px;
+        height: 40px;
+        font-size: .8rem;
+
+    }
+    .gradient-btn{
+        width: 175px;
+        height: 40px;
+        font-size: .8rem;
+    
+    }
+    .movingcontent{
+      max-height: 650px;
+      overflow-y: auto;
+  }
+}
+.gradient-btn{
+    width: 80%;
+    height: 50px;
+    display:grid;
+    place-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0072ff;
+    background-image:linear-gradient(
+    to right,
+    #4162cf 0%
+    #0072ff 51%
+    #4162cf 100%
+    );
+    animation: alternate;
+    transition-duration: .3ms;
+    border-radius: 10px;
+    background-size: 200% auto;
+    transition: .3s ease-in-out;
+    margin-top: 1.5rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24),0 6px 20px 0 rgba(0,0,0,0.19);
+    opacity: 0.9;
+    
+}
+.gradient-btn:hover{
+    opacity: 2;
+}
+
+
