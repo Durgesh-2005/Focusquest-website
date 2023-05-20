@@ -87,15 +87,15 @@
       
           // Check if the popup should be displayed
           function shouldDisplayPopup() {
-            // Check if the popupShown value is not set in sessionStorage
-            return sessionStorage.getItem('popupShown') !== 'true';
+            // Check if the popupShown value is not set in localStorage
+            return localStorage.getItem('popupShown') !== 'true';
           }
       
           // Show the popup
           function showPopup() {
             popup.style.display = "block";
-            // Set the popupShown value in sessionStorage
-            sessionStorage.setItem('popupShown', 'true');
+            // Set the popupShown value in localStorage
+            localStorage.setItem('popupShown', 'true');
           }
       
           // Check if the popup should be displayed and show it if necessary
