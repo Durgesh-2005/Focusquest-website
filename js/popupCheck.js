@@ -13,7 +13,6 @@ function showPopup() {
 
   popupShown = true;
 }
-
 // Check if the popup should be displayed and show it if necessary
 if (shouldDisplayPopup()) {
   showPopup();
