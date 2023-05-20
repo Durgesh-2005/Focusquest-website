@@ -87,15 +87,16 @@
       
           // Check if the popup should be displayed
           function shouldDisplayPopup() {
-            // Check if the popupShown value is not set in localStorage
-            return localStorage.getItem('popupShown') !== 'true';
+            // Check if the popupShown value is set in localStorage or not present in a cookie
+            return localStorage.getItem('popupShown') === null && document.cookie.indexOf('popupShown=') === -1;
           }
       
           // Show the popup
           function showPopup() {
             popup.style.display = "block";
-            // Set the popupShown value in localStorage
+            // Set the popupShown value in localStorage and a cookie
             localStorage.setItem('popupShown', 'true');
+            document.cookie = 'popupShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
           }
       
           // Check if the popup should be displayed and show it if necessary
@@ -106,7 +107,7 @@
         });
       </script>
 
-    </section>
+</section>
     <section class="search-bar" id="searchbar">
       <p>SEARCH THE SUBJECT CODE TO GET THE BOOK</p>
       <input type="text" id="myInput" onkeyup="myFunction()"
