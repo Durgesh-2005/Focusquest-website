@@ -56,6 +56,41 @@
       <a href="software.html" class="gradient-btn1">Programming</a>
       <a href="selector.html" class="gradient-btn1">ECE</a>
     </div>
+    <!--Pop UP-->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2>Help Our Community Study More!</h2>
+        <p>If you have any PDFs, e-books, or study materials that can benefit others, please consider sharing them with our community. Your contribution is greatly appreciated.</p>
+        <button id="closeBtn">Close</button>
+        <button id="uploadBtn">Upload Files</button>
+      </div>
+    </div>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var popup = document.getElementById("popup");
+      var closeBtn = document.getElementById("closeBtn");
+      var uploadBtn = document.getElementById("uploadBtn");
+    
+      closeBtn.addEventListener("click", function() {
+        popup.style.display = "none";
+      });
+    
+      uploadBtn.addEventListener("click", function() {
+  window.location.href = "https://script.google.com/macros/s/AKfycbwDJSES6AHC-SCDK-mUXLRrPKsnLmomOIHwVh0OzKCAeUTek9qIF6f-Iv8SZdhzbP8C/exec";
+});
+
+    
+      // Show the popup after a certain delay or when the user scrolls to a specific section of the page
+      // You can customize the trigger event and timing based on your preference
+    
+      // Example: Show the popup after 5 seconds
+      setTimeout(function() {
+        popup.style.display = "block";
+      }, 5000);
+    });
+    </script>
+    
   </section>
   <section class="search-bar" id="searchbar">
     <p>SEARCH THE SUBJECT CODE TO GET THE BOOK</p>
