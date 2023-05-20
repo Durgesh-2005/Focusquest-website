@@ -29,461 +29,477 @@
 </head>
 
 <body>
-  <section class="home-main">
-    <nav>
-      <div class="brand">
-        <img src="./images/Logo.svg" alt="LOGO">
-        <a href="./about.html">Focusquest</a>
+  <!--Pre loader-->
+  <div class="preloader">
+    <div class="loader"></div>
+    <!-------------->
+    <section class="home-main">
+      <nav>
+        <div class="brand">
+          <img src="./images/Logo.svg" alt="LOGO">
+          <a href="./about.html">Focusquest</a>
+        </div>
+        <i class="fa fa-bars" style="color: rgb(255, 255, 255);" aria-hidden="true"></i>
+        <ul>
+          <i class="fa fa-times" aria-hidden="true"></i>
+          <li><a href="#searchbar">&#x1F50E;&#xFE0E; Search</a></li>
+          <li><a href="INDEX.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="https://vaigandladurgesh.blogspot.com/">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./software.html">Softwares</a></li>
+          <li><a href="./googlesign/sign1.html">Sign in</a></li>
+
+
+        </ul>
+      </nav>
+
+      <div class="main-content">
+        <p>This site provides you the AP diploma Books/Notes/PQPs PDF's and lot more content</p>
+        <h1>CHOOSE THE BRANCH</h1>
+        <a href="software.html" class="gradient-btn1">Programming</a>
+        <a href="selector.html" class="gradient-btn1">ECE</a>
       </div>
-      <i class="fa fa-bars" style="color: rgb(255, 255, 255);" aria-hidden="true"></i>
-      <ul>
-        <i class="fa fa-times" aria-hidden="true"></i>
-        <li><a href="#searchbar">&#x1F50E;&#xFE0E; Search</a></li>
-        <li><a href="INDEX.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="https://vaigandladurgesh.blogspot.com/">Blog</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./software.html">Softwares</a></li>
-        <li><a href="./googlesign/sign1.html">Sign in</a></li>
-
-
-      </ul>
-    </nav>
-
-    <div class="main-content">
-      <p>This site provides you the AP diploma Books/Notes/PQPs PDF's and lot more content</p>
-      <h1>CHOOSE THE BRANCH</h1>
-      <a href="software.html" class="gradient-btn1">Programming</a>
-      <a href="selector.html" class="gradient-btn1">ECE</a>
-    </div>
-    <!--Pop UP-->
-    <div id="popup" class="popup">
-      <div class="popup-content">
-        <h2>Help Our Community Study More!</h2>
-        <p>If you have any PDFs, e-books, or study materials that can benefit others, please consider sharing them with our community. Your contribution is greatly appreciated.</p>
-        <button id="closeBtn">Close</button>
-        <button id="uploadBtn">Upload Files</button>
+      <!--Pop UP-->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <h2>Help Our Community Study More!</h2>
+          <p>If you have any PDFs, e-books, or study materials that can benefit others, please consider sharing them
+            with our community. Your contribution is greatly appreciated.</p>
+          <button id="closeBtn">Close</button>
+          <button id="uploadBtn">Upload Files</button>
+        </div>
       </div>
-    </div>
-    
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var popup = document.getElementById("popup");
-      var closeBtn = document.getElementById("closeBtn");
-      var uploadBtn = document.getElementById("uploadBtn");
-    
-      closeBtn.addEventListener("click", function() {
-        popup.style.display = "none";
-      });
-    
-      uploadBtn.addEventListener("click", function() {
-  window.location.href = "https://script.google.com/macros/s/AKfycbwDJSES6AHC-SCDK-mUXLRrPKsnLmomOIHwVh0OzKCAeUTek9qIF6f-Iv8SZdhzbP8C/exec";
-});
 
-    
-      // Show the popup after a certain delay or when the user scrolls to a specific section of the page
-      // You can customize the trigger event and timing based on your preference
-    
-      // Example: Show the popup after 5 seconds
-      setTimeout(function() {
-        popup.style.display = "block";
-      }, 5000);
-    });
-    </script>
-    
-  </section>
-  <section class="search-bar" id="searchbar">
-    <p>SEARCH THE SUBJECT CODE TO GET THE BOOK</p>
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="&#x1F50E;&#xFE0E;Search the name of the Book..?"
-      class="search">
-    <section class="movingcontent">
-      <table id="myTable">
-        <tr class="header">
-          <th style="width:max-content;">Name of the Book</th>
-          <th style="width:max-content;">Download</th>
-        </tr>
-        <tr>
-          <td>EC-501 INDUSTRIAL MANAGEMENT AND SMART TECHNOLOGIES</td>
-          <td><a class="downloadbtn" download
-              href="./files/5th sem/ec-501 industrial management and smart technologies/1. industrial management & smart technologies imst new 14-12-2020.pdf">DOWNLOAD</a>
-          </td>
-        </tr>
-        <tr>
-          <td>EC-502 MICROCONTROLLERS</td>
-          <td><a class="downloadbtn" download
-              href="./files/5th sem/ec-502 microcontrollers/2. microcontrollersap ec 50 mc.pdf">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-503 COMPUTER HARDWARE AND NETWORKING</td>
-          <td><a class="downloadbtn" download
-              href="./files/5th sem/ec-503 computer hardware and networking/5. computer hardware & netwroking.pdf">DOWNLOAD</a>
-          </td>
-        </tr>
-        <tr>
-          <td>EC-504 OPTICAL AND MOBILE COMMUNICATION</td>
-          <td><a class="downloadbtn" download
-              href="./files/5th sem/ec-504 optical and mobile communication/3. optical and mobile communications ap omc.pdf">DOWNLOAD</a>
-          </td>
-        </tr>
-        <tr>
-          <td>EC-505 INDUSTRIAL ELECTRONICS</td>
-          <td><a class="downloadbtn" download
-              href="./files/5th sem/ec-505 industrial electronics/4. industrial electronics ap ie 505 ec_unlocked.pdf">DOWNLOAD</a>
-          </td>
-        </tr>
-        <tr>
-          <td>EC-401 Linear IC and applications </td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-402 Programming in C and matlab</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-403 Microprocessors</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-404 Electronic measurements and consumer gadgets</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-405 Microwave and satellite communication systems</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-301 Engineering mathematics-2</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-302 Electronic circuits</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-303 Digital electronics</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-304 Analog and digital communication systems</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-305 Network analysis</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-101 English</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-102 Engineering mathematics-1</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-103 Engineering physics</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-104 Engineering chemistry and environmental studies</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-105 Electronic devices and power supplies</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-106 Elements of electrical engineering</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>EC-107 Engineering drawing</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-501 INDUSTRIAL MANAGEMENT AND SMART TECHNOLOGIES</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-502 MICROCONTROLLERS and Applications</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-503 OPTICAL AND MOBILE COMMUNICATION</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-504 INDUSTRIAL ELECTRONICS</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-505 COMPUTER HARDWARE AND NETWORKING</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-401 Engineering mathematics-3</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-402 electronics circuits-2</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-403 Microprocessors</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-404 Microwave and satellite communication systems</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-405 Programming in c and matlab</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-301 Engineering mathematics-2</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-302 Electronic circuits-1</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-303 Digital electronics</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-304 Analog and digital communication systems</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-305 Network analysis</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-306 Electronic measurements and consumer gadgets</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-101 English</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-102 Engineering mathematics-1</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-103 Engineering physics</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-104 Engineering chemistry and environmental studies</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-105 Electronic components and power supplies</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-106 Elements of electrical engineering</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 EC-107 Engineering drawing</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-        <tr>
-          <td>CM-501 INDUSTRIAL MANAGEMENT AND SMART TECHNOLOGIES</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-502 .NET programming with c#</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-503 system adminstration</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-504 Mobile applications development</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-505 Advances in computer Technology</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-401 computer hardware and networking</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-402 OOP through java</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-403 software Engineering</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-404 Microprocessors</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-405 web designing</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-301 Engineering mathematics-2</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-302 Digital electronics and computer architecture</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-303 operating system</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-304 Data structures through c</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-305 DBMS</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-101 English</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-102 Engineering mathematics-1</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-103 Engineering physics</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-104 Engineering chemistry and environmental studies</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-105 Basics of computer Engineering</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-106 Programming in C</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>CM-107 Engineering drawing</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-501 INDUSTRIAL MANAGEMENT AND SMART TECHNOLOGIES</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-502 java programming</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-503 software Engineering</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-504 Internet of things</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-505 python programming</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-401 mathematics-3</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-402 web Technologies</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-403 Computer organization and Microprocessors</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-404 OOP through c++</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-405 Computer Network</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-301 Engineering mathematics-2</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-302 Digital electronics</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-303 operating system</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-304 Data structures through c</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-305 DBMS</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-101 English</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-102 Engineering mathematics-1</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-103 Engineering physics</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-104 Engineering chemistry and environmental studies</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-105 Basics of computer Engineering</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-106 Programming in C</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
-        <tr>
-          <td>C-20 CM-107 Engineering drawing</td>
-          <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
-        </tr>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var popup = document.getElementById("popup");
+          var closeBtn = document.getElementById("closeBtn");
+          var uploadBtn = document.getElementById("uploadBtn");
 
-      </table>
+          closeBtn.addEventListener("click", function () {
+            popup.style.display = "none";
+          });
+
+          uploadBtn.addEventListener("click", function () {
+            window.location.href = "https://script.google.com/macros/s/AKfycbwDJSES6AHC-SCDK-mUXLRrPKsnLmomOIHwVh0OzKCAeUTek9qIF6f-Iv8SZdhzbP8C/exec";
+          });
+
+
+          // Show the popup after a certain delay or when the user scrolls to a specific section of the page
+          // You can customize the trigger event and timing based on your preference
+
+          // Example: Show the popup after 5 seconds
+          setTimeout(function () {
+            popup.style.display = "block";
+          }, 5000);
+        });
+      </script>
+
     </section>
-  </section>
-  <marquee class="note" behavior="" direction="left">Curently ECE 5th sem books are available remaining are
-    <strong>coming sooon......!</strong>
-  </marquee>
-  <div class="copyright">
-    &copy;All rights reserved by Focusquest-2022<br>
-    Made with &hearts; by Durgesh<br>
-    <a href="/privacypolicy.html">Privacy Policy</a>
-  </div>
+    <section class="search-bar" id="searchbar">
+      <p>SEARCH THE SUBJECT CODE TO GET THE BOOK</p>
+      <input type="text" id="myInput" onkeyup="myFunction()"
+        placeholder="&#x1F50E;&#xFE0E;Search the name of the Book..?" class="search">
+      <section class="movingcontent">
+        <table id="myTable">
+          <tr class="header">
+            <th style="width:max-content;">Name of the Book</th>
+            <th style="width:max-content;">Download</th>
+          </tr>
+          <tr>
+            <td>EC-501 INDUSTRIAL MANAGEMENT AND SMART TECHNOLOGIES</td>
+            <td><a class="downloadbtn" download
+                href="./files/5th sem/ec-501 industrial management and smart technologies/1. industrial management & smart technologies imst new 14-12-2020.pdf">DOWNLOAD</a>
+            </td>
+          </tr>
+          <tr>
+            <td>EC-502 MICROCONTROLLERS</td>
+            <td><a class="downloadbtn" download
+                href="./files/5th sem/ec-502 microcontrollers/2. microcontrollersap ec 50 mc.pdf">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-503 COMPUTER HARDWARE AND NETWORKING</td>
+            <td><a class="downloadbtn" download
+                href="./files/5th sem/ec-503 computer hardware and networking/5. computer hardware & netwroking.pdf">DOWNLOAD</a>
+            </td>
+          </tr>
+          <tr>
+            <td>EC-504 OPTICAL AND MOBILE COMMUNICATION</td>
+            <td><a class="downloadbtn" download
+                href="./files/5th sem/ec-504 optical and mobile communication/3. optical and mobile communications ap omc.pdf">DOWNLOAD</a>
+            </td>
+          </tr>
+          <tr>
+            <td>EC-505 INDUSTRIAL ELECTRONICS</td>
+            <td><a class="downloadbtn" download
+                href="./files/5th sem/ec-505 industrial electronics/4. industrial electronics ap ie 505 ec_unlocked.pdf">DOWNLOAD</a>
+            </td>
+          </tr>
+          <tr>
+            <td>EC-401 Linear IC and applications </td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-402 Programming in C and matlab</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-403 Microprocessors</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-404 Electronic measurements and consumer gadgets</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-405 Microwave and satellite communication systems</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-301 Engineering mathematics-2</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-302 Electronic circuits</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-303 Digital electronics</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-304 Analog and digital communication systems</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-305 Network analysis</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-101 English</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-102 Engineering mathematics-1</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-103 Engineering physics</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-104 Engineering chemistry and environmental studies</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-105 Electronic devices and power supplies</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-106 Elements of electrical engineering</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>EC-107 Engineering drawing</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-501 INDUSTRIAL MANAGEMENT AND SMART TECHNOLOGIES</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-502 MICROCONTROLLERS and Applications</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-503 OPTICAL AND MOBILE COMMUNICATION</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-504 INDUSTRIAL ELECTRONICS</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-505 COMPUTER HARDWARE AND NETWORKING</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-401 Engineering mathematics-3</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-402 electronics circuits-2</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-403 Microprocessors</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-404 Microwave and satellite communication systems</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-405 Programming in c and matlab</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-301 Engineering mathematics-2</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-302 Electronic circuits-1</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-303 Digital electronics</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-304 Analog and digital communication systems</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-305 Network analysis</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-306 Electronic measurements and consumer gadgets</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-101 English</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-102 Engineering mathematics-1</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-103 Engineering physics</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-104 Engineering chemistry and environmental studies</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-105 Electronic components and power supplies</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-106 Elements of electrical engineering</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 EC-107 Engineering drawing</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+          <tr>
+            <td>CM-501 INDUSTRIAL MANAGEMENT AND SMART TECHNOLOGIES</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-502 .NET programming with c#</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-503 system adminstration</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-504 Mobile applications development</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-505 Advances in computer Technology</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-401 computer hardware and networking</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-402 OOP through java</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-403 software Engineering</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-404 Microprocessors</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-405 web designing</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-301 Engineering mathematics-2</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-302 Digital electronics and computer architecture</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-303 operating system</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-304 Data structures through c</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-305 DBMS</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-101 English</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-102 Engineering mathematics-1</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-103 Engineering physics</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-104 Engineering chemistry and environmental studies</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-105 Basics of computer Engineering</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-106 Programming in C</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>CM-107 Engineering drawing</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-501 INDUSTRIAL MANAGEMENT AND SMART TECHNOLOGIES</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-502 java programming</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-503 software Engineering</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-504 Internet of things</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-505 python programming</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-401 mathematics-3</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-402 web Technologies</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-403 Computer organization and Microprocessors</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-404 OOP through c++</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-405 Computer Network</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-301 Engineering mathematics-2</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-302 Digital electronics</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-303 operating system</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-304 Data structures through c</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-305 DBMS</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-101 English</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-102 Engineering mathematics-1</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-103 Engineering physics</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-104 Engineering chemistry and environmental studies</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-105 Basics of computer Engineering</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-106 Programming in C</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
+          <tr>
+            <td>C-20 CM-107 Engineering drawing</td>
+            <td><a class="downloadbtn" download href="#">DOWNLOAD</a></td>
+          </tr>
 
-  <script src="/js/navbar.js"> </script>
-  <script src="/js/selector.js"> </script>
-  <script src="https://kit.fontawesome.com/ea0a3ae1c8.js" crossorigin="anonymous"></script>
+        </table>
+      </section>
+    </section>
+    <marquee class="note" behavior="" direction="left">Curently ECE 5th sem books are available remaining are
+      <strong>coming sooon......!</strong>
+    </marquee>
+    <div class="copyright">
+      &copy;All rights reserved by Focusquest-2022<br>
+      Made with &hearts; by Durgesh<br>
+      <a href="/privacypolicy.html">Privacy Policy</a>
+    </div>
+
+    <script src="/js/navbar.js"> </script>
+    <script src="/js/selector.js"> </script>
+    <script src="/js/popupCheck.js"> </script>
+    <script src="https://kit.fontawesome.com/ea0a3ae1c8.js" crossorigin="anonymous"></script>
+    <script>
+      // Wait for the page to load
+      document.addEventListener("DOMContentLoaded", function() {
+        // Hide the preloader when the page is fully loaded
+        window.addEventListener("load", function() {
+          var preloader = document.getElementById("preloader");
+          preloader.style.display = "none";
+        });
+      });
+    </script>
 
 
 </body>
