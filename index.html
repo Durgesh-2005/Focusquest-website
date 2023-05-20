@@ -76,23 +76,33 @@
           var popup = document.getElementById("popup");
           var closeBtn = document.getElementById("closeBtn");
           var uploadBtn = document.getElementById("uploadBtn");
-
+      
           closeBtn.addEventListener("click", function () {
             popup.style.display = "none";
           });
-
+      
           uploadBtn.addEventListener("click", function () {
             window.location.href = "https://script.google.com/macros/s/AKfycbwDJSES6AHC-SCDK-mUXLRrPKsnLmomOIHwVh0OzKCAeUTek9qIF6f-Iv8SZdhzbP8C/exec";
           });
-
-
-          // Show the popup after a certain delay or when the user scrolls to a specific section of the page
-          // You can customize the trigger event and timing based on your preference
-
-          // Example: Show the popup after 5 seconds
-          setTimeout(function () {
+      
+          // Check if the popup should be displayed
+          function shouldDisplayPopup() {
+            // Check if the popupShown value is not set in sessionStorage
+            return sessionStorage.getItem('popupShown') !== 'true';
+          }
+      
+          // Show the popup
+          function showPopup() {
             popup.style.display = "block";
-          }, 5000);
+            // Set the popupShown value in sessionStorage
+            sessionStorage.setItem('popupShown', 'true');
+          }
+      
+          // Check if the popup should be displayed and show it if necessary
+          if (shouldDisplayPopup()) {
+            // Show the popup after a certain delay (e.g., 5 seconds)
+            setTimeout(showPopup, 5000);
+          }
         });
       </script>
 
