@@ -1,0 +1,148 @@
+/* Reset some default styles for consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Header */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #3366cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Featured Articles */
+  .featured-articles {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .featured-articles .article {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    width: 300px;
+  }
+  
+  /* Categories */
+  .categories {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .categories .category {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    width: 200px;
+  }
+  
+  /* Recent Articles */
+  .recent-articles {
+    padding: 50px;
+  }
+  
+  .recent-articles ul li {
+    margin-bottom: 20px;
+  }
+  
+  .recent-articles ul li a {
+    font-weight: bold;
+  }
+  
+  .recent-articles ul li span {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .recent-articles ul li p {
+    margin-top: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    margin-left: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .logo {
+      font-size: 20px;
+    }
+  
+    header {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .search-bar {
+      flex-basis: 100%;
+      margin-top: 10px;
+    }
+  
+    .featured-articles .article,
+    .categories .category {
+      width: 100%;
+    }
+  }
+  
+  
