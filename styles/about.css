@@ -21,6 +21,7 @@
     font-size: large;
 } 
 .card {
+    background: linear-gradient(to right, #bdc3c7,#2c3e50)
     box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.804);
     max-width: 300px;
     margin: auto;
