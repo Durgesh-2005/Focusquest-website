@@ -1,6 +1,7 @@
 .home-main {
   background-attachment: fixed;
-  background-image: url('./man\ bg2.jpg');
+    background: linear-gradient(to right, #606c88,#3f4c6b);
+
   background-size: cover;
   min-height: 100vh;
   background-position: center;
