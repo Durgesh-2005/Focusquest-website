@@ -1,17 +1,11 @@
-function onSignIn(googleUser) {
+function onSuccess(googleUser) {
     var profile = googleUser.getBasicProfile();
-    $("#name").text(profile.getName());
-    $("#email").text(profile.getEmail());
-    $("#image").attr('src', profile.getImageUrl());
-    $(".data").css("display", "block");
-    $(".my-signin2").css("display", "none");
-}
+    var userName = profile.getName();
+    var userImage = profile.getImageUrl();
 
-function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-        alert("You have been signed out successfully");
-        $(".data").css("display", "none");
-        $(".my-signin2").css("display", "block");
-    });
+    document.getElementById('user-name').textContent = "Welcome, " + userName;
+    document.getElementById('user-image').src = userImage;
+
+    document.getElementById('user-profile').style.display = 'block';
+    document.getElementsByClassName('login')[0].style.display = 'none';
 }
