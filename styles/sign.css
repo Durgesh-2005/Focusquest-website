@@ -14,45 +14,47 @@ section {
     background-size: cover;
 }
 
-.login {
+.signUp {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.5);
-    width: 500px;
+    width: 400px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px 0px 0px 0px;
 }
 
-.login h1 {
+.signUp h1 {
     font-size: 2.5rem;
     text-align: center;
+    padding: 0px 0px;
 }
 
-.login form {
+.signUp form {
     margin-top: 1rem;
 }
 
 /*----------------------------------------1st item---------------------------------*/
-.login .form-item-1 {
+.signUp .form-item-1 {
     display: flex;
     flex-direction: row;
     margin: 10px 0px;
+    padding: 0px 20px;
 }
 
-.login .form-item-1:nth-child(4) {
+.signUp .form-item-1:nth-child(4) {
     align-items: center;
     flex-direction: row;
 }
 
-.login .form-item-1:nth-child(4) label {
+.signUp .form-item-1:nth-child(4) label {
     margin-left: 5px;
 }
 
-.login .form-item-1 input {
+.signUp .form-item-1 input {
     height: 40px;
     padding: 5px 10px;
     background: transparent;
@@ -60,106 +62,89 @@ section {
     border: 1px solid royalblue;
     margin-left: 5px;
     margin-block-start: 0px;
-    margin-inline-start: 62px;
+    margin-inline-start: 0px;
+    width: 100%;
 }
 
 /*--------------------------------2nd item---------------------------*/
-.login .form-item-2 {
+.signUp .form-item-2 {
     display: flex;
     flex-direction: row;
     margin: 10px 0px;
+    padding: 0px 20px;
+
 }
 
-.login .form-item-2:nth-child(4) {
+.signUp .form-item-2:nth-child(4) {
     align-items: center;
     flex-direction: row;
 }
 
-.login .form-item-2:nth-child(4) label {
+.signUp .form-item-2:nth-child(4) label {
     margin-left: 5px;
 }
 
-.login .form-item-2 input {
+.signUp .form-item-2 input {
     height: 40px;
     padding: 5px 10px;
     background: transparent;
     outline: none;
     border: 1px solid royalblue;
     margin-left: 5px;
-    margin-inline-start: 30px;
+    margin-inline-start: 0px;
+    width: 100%;
 }
 
 /*--------------------------------3rd item------------------------------------------*/
-.login .form-item-3 {
+.signUp .form-item-3 {
     display: flex;
     flex-direction: row;
     margin: 10px 0px;
+    padding: 0px 20px;
+
 }
 
-.login .form-item-3:nth-child(4) {
+.signUp .form-item-3:nth-child(4) {
     align-items: center;
     flex-direction: row;
 }
 
-.login .form-item-3:nth-child(4) label {
+.signUp .form-item-3:nth-child(4) label {
     margin-left: 5px;
 }
 
-.login .form-item-3 input {
+.signUp .form-item-3 input {
     height: 40px;
     padding: 5px 10px;
     background: transparent;
     outline: none;
     border: 1px solid royalblue;
     margin-left: 5px;
-    margin-inline-start: 63px;
-}
-
-/*--------------------------------------4th item-------------------------------------------*/
-.login .form-item-4 {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0px;
-}
-
-.login .form-item-4:nth-child(4) {
-    align-items: center;
-    flex-direction: row;
-}
-
-.login .form-item-4:nth-child(4) label {
-    margin-left: 5px;
-}
-
-.login .form-item-4 input {
-    height: 40px;
-    padding: 5px 10px;
-    background: transparent;
-    outline: none;
-    border: 2px solid royalblue;
-    margin-left: 5px;
-    margin-block-start: 10px;
     margin-inline-start: 0px;
+    width: 100%;
 }
 
-/*LoGIN BUTTON*/
-.login form button {
+
+/*signUp BUTTON*/
+.signUp form button {
     background-color: royalblue;
     color: #fff;
-    width: 100%;
+    width: 80%;
     height: 40px;
     border: none;
     outline: none;
     cursor: pointer;
     transition: .3s ease-in-out;
     margin: 25px 0px;
+    margin-inline-start: 35px;
+    
 }
 
-.login form button:hover {
+.signUp form button:hover {
     background-color: rgb(39, 73, 177);
 }
 
-.login form a {
+.signUp form a {
     background-color: royalblue;
     color: #fff;
     width: 100%;
@@ -170,89 +155,239 @@ section {
     transition: .3s ease-in-out;
 }
 
-.login form a:hover {
+.signUp form a:hover {
+    background-color: rgb(39, 73, 177);
+}
+/*Sign In*/
+  .tabs {
+    display: flex;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    width: 400px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 0px;
+    z-index: 2;
+
+  }
+  .signUp {
+    display: block;
+  }
+  
+  .signIn {
+    display: none;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    
+  }
+  
+  .tabs button.active {
+    background-color: #ddd;
+  }
+  .form {
+    margin-top: 20px;
+  }
+  .signIn {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    width: 400px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    display: none;
+    padding: 50px 0px 0px 0px;
+}
+
+.signIn h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.signIn form {
+    margin-top: 1rem;
+}
+
+/*----------------------------------------1st item---------------------------------*/
+.signIn .form-item-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    padding: 0px 20px;
+
+}
+
+.signIn .form-item-1:nth-child(4) {
+    align-items: center;
+    flex-direction: row;
+}
+
+.signIn .form-item-1:nth-child(4) label {
+    margin-left: 5px;
+}
+
+.signIn .form-item-1 input {
+    height: 40px;
+    padding: 5px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid royalblue;
+    margin-left: 5px;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
+    width: 100%;
+}
+
+/*--------------------------------2nd item---------------------------*/
+.signIn .form-item-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    padding: 0px 20px;
+
+}
+
+.signIn .form-item-2:nth-child(4) {
+    align-items: center;
+    flex-direction: row;
+}
+
+.signIn .form-item-2:nth-child(4) label {
+    margin-left: 5px;
+}
+
+.signIn .form-item-2 input {
+    height: 40px;
+    padding: 5px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid royalblue;
+    margin-left: 5px;
+    margin-inline-start: 0px;
+    width: 100%;
+}
+
+/*--------------------------------3rd item------------------------------------------*/
+.signIn .form-item-3 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    padding: 0px 20px;
+
+}
+
+.signIn .form-item-3:nth-child(4) {
+    align-items: center;
+    flex-direction: row;
+}
+
+.signIn .form-item-3:nth-child(4) label {
+    margin-left: 5px;
+}
+
+.signIn .form-item-3 input {
+    height: 40px;
+    padding: 5px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid royalblue;
+    margin-left: 5px;
+    margin-inline-start: 0px;
+    width: 100%;
+}
+/*signIn BUTTON*/
+.signIn form button {
+    background-color: royalblue;
+    color: #fff;
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin: 25px 0px;
+    margin-inline-start: 35px;
+
+}
+
+.signIn form button:hover {
     background-color: rgb(39, 73, 177);
 }
 
-.googleBtn {
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    width: 20%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 240px;
-    height: 50px;
-    padding: 0 16px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    color: #757575;
+.signIn form a {
+    background-color: royalblue;
+    color: #fff;
+    width: 100%;
+    height: 90px;
+    border: none;
+    outline: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: .3s ease-in-out;
 }
 
-.googleBtn:hover {
-    background-color: #f8f8f8;
+.signIn form a:hover {
+    background-color: rgb(39, 73, 177);
 }
-
-.googleBtn:active {
-    background-color: #776969;
-}
-
 
 
 @media screen and (max-width:600px) {
-    .login {
+/*      .signUp {
         min-width: 20vh;
         width: 350px;
         border-radius: 5px;
         padding: 10px;
     }
 
-    .login form button {
+    .signUp form button {
         margin: 20px 0px;
     }
 
-    .login h1 {
+    .signUp h1 {
         font-size: 1.5rem;
     }
 
-    .login .form-item-1 {
+    .signUp .form-item-1 {
         display: flex;
         flex-direction: row;
         margin: 1px 0px;
     }
 
-    .login .form-item-2 {
+    .signUp .form-item-2 {
         display: flex;
         flex-direction: row;
         margin: 1px 0px;
     }
 
-    .login .form-item-3 {
+    .signUp .form-item-3 {
         display: flex;
         flex-direction: row;
         margin: 1px 0px;
     }
 
-    .login .form-item-1 input {
+    .signUp .form-item-1 input {
         margin-inline-start: 35px;
     }
 
-    .login .form-item-2 input {
+    .signUp .form-item-2 input {
         margin-inline-start: 20px;
     }
 
-    .login .form-item-3 input {
+    .signUp .form-item-3 input {
         margin-inline-start: 0px;
-    }
+    }*/
 }
