@@ -45,7 +45,7 @@
       <button id="signInBtn" class="active">Sign In</button>
     </div>
     <div id="signUpForm" class="form signUp">
-     
+
       <h1>Sign Up</h1>
       <form id="sign-up-form">
         <input type="hidden" name="_captcha" value="false">
@@ -53,24 +53,24 @@
           <input type="text" id="username" placeholder="Enter Username" name="username" required />
         </div>
         <div class="form-item-2">
-          <input type="email" id="email" placeholder="Enter Your E-Mail" name="email" required />
+          <input type="email" id="signUpEmail" placeholder="Enter Your E-Mail" name="email" required />
         </div>
         <div class="form-item-3">
-          <input type="password" id="password" placeholder="Enter Password" name="password" required />
+          <input type="password" id="signUpPassword" placeholder="Enter Password" name="password" required />
         </div>
-        <button id="signInButton" type="submit">Sign Up</button>
+        <button id="signUpButton" type="submit">Sign Up</button>
       </form>
     </div>
 
     <div id="signInForm" class="form signIn">
       <h1>Sign In</h1>
-      <form id="sign-In-form">
+      <form id="sign-in-form">
         <input type="hidden" name="_captcha" value="false">
         <div class="form-item-1">
-          <input type="email" id="email" placeholder="Enter Your E-Mail" name="email" required />
+          <input type="email" id="signInEmail" placeholder="Enter Your E-Mail" name="email" required />
         </div>
         <div class="form-item-2">
-          <input type="password" id="password" placeholder="Enter Password" name="password" required />
+          <input type="password" id="signInPassword" placeholder="Enter Password" name="password" required />
         </div>
         <button id="signInButton" type="submit">Sign In</button>
       </form>
@@ -144,8 +144,8 @@
     document.getElementById('sign-up-form').addEventListener('submit', (e) => {
       e.preventDefault();
 
-      var email = document.getElementById('email').value;
-      var password = document.getElementById('password').value;
+      var email = document.getElementById('signUpEmail').value;
+      var password = document.getElementById('signUpPassword').value;
       var username = document.getElementById('username').value;
 
       console.log("Email:", email);
@@ -162,21 +162,25 @@
             username: username,
             email: email
           })
-          alert(username +'account Created Successfully.!');
+          alert(username + 'account Created Successfully.!');
           // ...
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
 
-          alert('Error: ' + errorCode );
+          alert('Error: ' + errorCode);
           // ..
         });
     });
-    document.getElementById('sign-In-form').addEventListener('submit', (e) => {
+    document.getElementById('sign-in-form').addEventListener('submit', (e) => {
+      e.preventDefault();
 
-      var email = document.getElementById('email').value;
-      var password = document.getElementById('password').value;
+      var email = document.getElementById('signInEmail').value;
+      var password = document.getElementById('signInPassword').value;
+
+      console.log("Email:", email);
+      console.log("Password:", password);
 
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -187,7 +191,7 @@
             last_login: username,
 
           })
-          alert(username +' Logged In')
+          alert(username + ' Logged In')
           // ...
         })
         .catch((error) => {
@@ -197,18 +201,18 @@
         });
     })
 
-    const user = auth.currentUser;
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        // User is signed in, see docs for a list of available properties
-        // https://firebase.google.com/docs/reference/js/auth.user
-        const uid = user.uid;
-        // ...
-      } else {
-        // User is signed out
-        // ...
-      }
-    });
+    /* const user = auth.currentUser;
+     onAuthStateChanged(auth, (user) => {
+       if (user) {
+         // User is signed in, see docs for a list of available properties
+         // https://firebase.google.com/docs/reference/js/auth.user
+         const uid = user.uid;
+         // ...
+       } else {
+         // User is signed out
+         // ...
+       }
+     });*/
 
     logout.addEventListener('click', (e) => {
       signOut(auth).then(() => {
@@ -217,8 +221,8 @@
       }).catch((error) => {
         // An error happened.
         const errorCode = error.code;
-          const errorMessage = error.message;
-          alert(errorMessage);
+        const errorMessage = error.message;
+        alert(errorMessage);
       });
     });
   </script>
