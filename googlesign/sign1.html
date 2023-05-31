@@ -40,10 +40,11 @@
   </section>
   <!--Login section i/p fields-->
   <div class="container">
-    <div class="tabs">
+    <div id="tabs" class="tabs">
       <button id="signUpBtn">Sign Up</button>
       <button id="signInBtn" class="active">Sign In</button>
     </div>
+    <!--Sign-Up-Form-->
     <div id="signUpForm" class="form signUp">
 
       <h1>Sign Up</h1>
@@ -61,7 +62,7 @@
         <button id="signUpButton" type="submit">Sign Up</button>
       </form>
     </div>
-
+    <!--Sign-In-form-->
     <div id="signInForm" class="form signIn">
       <h1>Sign In</h1>
       <form id="sign-in-form">
@@ -76,6 +77,18 @@
       </form>
     </div>
   </div>
+
+  <!--User profile-->
+  <div id="userDetailsContainer" class="user-details-container">
+    <img id="profilePic" class="profile-pic" alt="Profile Picture" src="../images/profile-logo.png">
+    <h3 id="username" class="username"></h3>
+    <p id="userEmail" class="user-email"></p>
+    <button id="logoutButton" class="logout-button">Logout</button>
+  </div>
+
+
+  <!-- ... Copy right ... -->
+
   <div class="copyright">
     &copy;All rights reserved by Focusquest-2023<br>
     Made with &hearts; by Durgesh<br>
@@ -173,6 +186,8 @@
           // ..
         });
     });
+    // ... Previous JavaScript code ...
+
     document.getElementById('sign-in-form').addEventListener('submit', (e) => {
       e.preventDefault();
 
@@ -188,10 +203,20 @@
           const user = userCredential.user;
           const dt = new Date();
           update(ref(database, 'users/' + user.uid), {
-            last_login: username,
+            last_login: email,
 
-          })
-          alert(username + ' Logged In')
+          });
+          document.getElementById('userDetailsContainer').style.display = 'block';
+          document.getElementById('signInForm').style.display = 'none';
+          document.getElementById('signUpForm').style.display = 'none';
+          document.getElementById('tabs').style.display = 'none';
+
+          // Display user details
+          document.getElementById('username').textContent = user.displayName;
+          document.getElementById('userEmail').textContent = user.email;
+          // Redirect to the home page
+          window.location.href = "../index.html";
+          alert(user.displayName + ' Logged In');
           // ...
         })
         .catch((error) => {
@@ -199,32 +224,44 @@
           const errorMessage = error.message;
           alert(errorMessage);
         });
-    })
-
-    /* const user = auth.currentUser;
-     onAuthStateChanged(auth, (user) => {
-       if (user) {
-         // User is signed in, see docs for a list of available properties
-         // https://firebase.google.com/docs/reference/js/auth.user
-         const uid = user.uid;
-         // ...
-       } else {
-         // User is signed out
-         // ...
-       }
-     });*/
-
-    logout.addEventListener('click', (e) => {
-      signOut(auth).then(() => {
-        alert('Loged out Successfully..!');
-        // Sign-out successful.
-      }).catch((error) => {
-        // An error happened.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        alert(errorMessage);
-      });
     });
+
+
+    const user = auth.currentUser;
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // User is signed in
+        document.getElementById('userDetailsContainer').style.display = 'block';
+        document.getElementById('signInForm').style.display = 'none';
+        document.getElementById('signUpForm').style.display = 'none';
+        document.getElementById('tabs').style.display = 'none';
+
+        // Display user details
+        // document.getElementById('profilePic').src = user.photoURL;
+        document.getElementById('username').textContent = user.displayName;
+        document.getElementById('userEmail').textContent = user.email;
+      } else {
+        // User is signed out
+        document.getElementById('userDetailsContainer').style.display = 'none';
+        document.getElementById('signInForm').style.display = 'true';
+        document.getElementById('signUpForm').style.display = 'true';
+        document.getElementById('tabs').style.display = 'true';
+      }
+    });
+
+    document.getElementById('logoutButton').addEventListener('click', (e) => {
+      signOut(auth)
+        .then(() => {
+          alert('Logged out Successfully!');
+          // Sign-out successful.
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert(errorMessage);
+        });
+    });
+
   </script>
 
 </body>
