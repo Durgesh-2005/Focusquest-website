@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Focusquest">
+  <meta property="og:description"
+    content="Focusquest provides e-books, records, and lab PDFs for diploma students. Learn Java programming language and enhance your skills.">
+  <meta property="og:image" content="https://focusquest.netlify.app/images/Logo.svg">
+  <meta property="og:image:alt" content="LOGO">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +19,7 @@
   <link rel="stylesheet" href="./styles/navbar.css">
   <link rel="icon" type="image/x-icon" href="/images/Logo.svg">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8W54VYDGZ"></script>
   <script>
@@ -76,21 +81,21 @@
           var popup = document.getElementById("popup");
           var closeBtn = document.getElementById("closeBtn");
           var uploadBtn = document.getElementById("uploadBtn");
-      
+
           closeBtn.addEventListener("click", function () {
             popup.style.display = "none";
           });
-      
+
           uploadBtn.addEventListener("click", function () {
             window.location.href = "https://script.google.com/macros/s/AKfycbwDJSES6AHC-SCDK-mUXLRrPKsnLmomOIHwVh0OzKCAeUTek9qIF6f-Iv8SZdhzbP8C/exec";
           });
-      
+
           // Check if the popup should be displayed
           function shouldDisplayPopup() {
             // Check if the popupShown value is not set in localStorage AND not present in a cookie
             return !localStorage.getItem('popupShown') && document.cookie.indexOf('popupShown=') === -1;
           }
-      
+
           // Show the popup
           function showPopup() {
             popup.style.display = "block";
@@ -98,7 +103,7 @@
             localStorage.setItem('popupShown', 'true');
             document.cookie = 'popupShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
           }
-      
+
           // Check if the popup should be displayed and show it if necessary
           if (shouldDisplayPopup()) {
             // Show the popup after a certain delay (e.g., 5 seconds)
@@ -107,7 +112,7 @@
         });
       </script>
 
-</section>
+    </section>
     <section class="search-bar" id="searchbar">
       <p>SEARCH THE SUBJECT CODE TO GET THE BOOK</p>
       <input type="text" id="myInput" onkeyup="myFunction()"
@@ -503,9 +508,9 @@
     <script src="https://kit.fontawesome.com/ea0a3ae1c8.js" crossorigin="anonymous"></script>
     <script>
       // Wait for the page to load
-      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("DOMContentLoaded", function () {
         // Hide the preloader when the page is fully loaded
-        window.addEventListener("load", function() {
+        window.addEventListener("load", function () {
           var preloader = document.getElementById("preloader");
           preloader.style.display = "none";
         });
