@@ -61,6 +61,11 @@
 }
 
 /*------------Search CSS-----------*/
+.downloadbtn[disabled] {
+  opacity: 0.5; /* Reduce the opacity */
+  cursor: not-allowed; /* Change the cursor to not-allowed */
+}
+
 .movingcontent{
     max-height: 490px;
     overflow-y: auto;

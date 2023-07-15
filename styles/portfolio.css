@@ -1,0 +1,89 @@
+.home-main {
+  background-attachment: fixed;
+    background: linear-gradient(to right, #606c88,#3f4c6b);
+
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}
+.main-text{
+    color: #ddd;
+    position: absolute;
+    padding: 1rem;
+    text-align:start;
+    top: 10%;
+    left: 26%;
+    font-size: 40px;
+}
+
+
+.main-text p{
+    font-size: large;
+} 
+.card {
+    background: linear-gradient(to right, #3c4e5a,#2c3e50);
+    box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.804);
+    max-width: 300px;
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+  }
+  
+  .title {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(195, 195, 195);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+  }
+  
+  button:hover, a:hover {
+    opacity: 1;
+  }
+  img{
+    margin-top: 15px;
+    top: 50%;
+
+  }
+  @media screen and (max-width:600px){
+    .main-text{
+        font-size: 2rem;
+        left: 20px;
+        top: 5rem;
+        position: -ms-page;
+    }
+    .main-text h1{
+        font-size: 1.5rem;
+    }
+    .main-text p{
+        font-size: 0.75rem;
+    }
+    .card{
+        margin-top: 120%;
+        margin-bottom: 0;
+       position: static;
+       box-shadow: none;
+    }
+    }
+/*
+desktop:1200px
+laptop:1024px
+tablrt:768px
+mobile:480px
+*/
