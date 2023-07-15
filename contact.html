@@ -62,7 +62,7 @@
 
   <section class="contact-form" id="contact">
     <h1>Contact our team directly</h1>
-    <form name="contact" action="https://formsubmit.co/el/xifega" method="POST">
+    <form name="contact" id="contactForm" action="https://formsubmit.co/el/xifega" method="POST">
       <input type="text" name="fname" placeholder="First name" required />
       <input type="text" name="lname" placeholder="Last name" required />
       <input type="email" name="email" placeholder="Email address" required />
@@ -103,6 +103,29 @@
     })
   </script>
   <script src="https://kit.fontawesome.com/ea0a3ae1c8.js" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Additional logic or validation if needed
+
+      // Submit the form asynchronously using JavaScript
+      fetch(event.target.action, {
+        method: event.target.method,
+        body: new FormData(event.target)
+      })
+        .then(response => {
+          // Handle the response if needed
+          alert("Form submitted successfully!");
+          // You can show a success message or perform any other action here
+        })
+        .catch(error => {
+          // Handle any errors that occur during form submission
+          alert("Form submission error:", error);
+          // You can show an error message or perform any other action here
+        });
+    });
+  </script>
 
 </body>
 
