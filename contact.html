@@ -47,7 +47,7 @@
       <ul>
         <i class="fa fa-times" aria-hidden="true"></i>
         <li><a href="INDEX.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
         <li><a href="https://learnwithvaigandla.blogspot.com/">Blog</a></li>
         <li><a href="./contact.html">Contact</a></li>
         <li><a href="./software.html">Softwares</a></li>
@@ -56,13 +56,13 @@
     </nav>
     <div class="contact-main-text">
       <h1><span class="auto-input"></span></h1><br>
-      <a href="#contact">Need help?</a>
+      <a href="#contact" class="scroll-link">Need help?</a>
     </div>
   </section>
 
   <section class="contact-form" id="contact">
     <h1>Contact our team directly</h1>
-    <form name="contact" netlify method="POST">
+    <form name="contact" action="https://formsubmit.co/el/xifega" method="POST">
       <input type="text" name="fname" placeholder="First name" required />
       <input type="text" name="lname" placeholder="Last name" required />
       <input type="email" name="email" placeholder="Email address" required />
@@ -86,13 +86,14 @@
       </ul>
     </div>
   </section>
-  <div class="copyright">
+  <div class="copyright" style="object-fit:cv;">
     &copy;All rights reserved by Focusquest-2023<br>
     Made with &hearts; by Durgesh
   </div>
 
 
   <script src="/js/navbar.js"> </script>
+  <script src="/js/contact.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     var typed = new Typed(".auto-input", {
