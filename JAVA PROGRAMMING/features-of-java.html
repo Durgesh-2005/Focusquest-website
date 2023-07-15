@@ -1,0 +1,370 @@
+<head>
+    <meta property="og:title" content="Features of Java | learnwithvaigandla">
+    <meta property="og:description"
+        content="Features of Java\n1.Simple\n2.Object-oriented\n3.Portable\n4.Platform independent\n5.Secured\n6.Robust\n7.Architecuture neutral\n8.Interpreted\n9.High performance\n10.Multithreaded\n11.Distributed\n12.Dynamic">
+    <meta name="description"
+        content="Explore the key features of Java programming language and its versatility. Learn about Java's platform independence, object-oriented nature, robustness, and more." />
+    <meta name="keywords"
+        content="Java features, Java programming language, platform independence, object-oriented programming, robustness, security, performance, scalability,learnwithvaigandla" />
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L1VGLFBGV7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L1VGLFBGV7');
+    </script>
+</head>
+<br>
+<button class="top-next btn" Onclick="URLredirect1()">Next</button>
+<style>
+  /*card wraps*/
+  .card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+ .card {
+  flex: 1 1 150px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: black;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.content .para {
+  line-height: 1.5;
+}
+
+.content .btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.card:hover{
+  color: #212121;
+  background: #e8e8e8;
+}
+
+.content .btn:hover {
+  outline: 2px solid #e8e8e8;
+  background:#666666;
+  color: #e8e8e8;
+}
+
+.content .btn:active {
+  box-shadow: none;
+}
+    /*Top Next btn*/
+    .top-next {
+        width: 100px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        outline: none;
+        font-size: 20px;
+        display: inline-block;
+
+        transition: all 0.3s ease;
+        position: absolute;
+        top: calc(1% + 10px);
+        right: 10px;
+    }
+
+    .btn {
+        background: #3385ff;
+        border: none;
+    }
+
+    .btn:hover {
+        background: #0066ff;
+    }
+
+    /*Bottom Next btn*/
+    .bottom-next {
+        width: 100px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        outline: none;
+        font-size: 20px;
+        display: inline-block;
+
+        transition: all 0.3s ease;
+        position: absolute;
+        top: calc(94% + 10px);
+        right: 10px;
+    }
+
+    .btn {
+        background: #3385ff;
+        border: none;
+    }
+
+    .btn:hover {
+        background: #0066ff;
+    }
+
+    /*Bottom previous-btn*/
+    .bottom-previous {
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        outline: none;
+        font-size: 20px;
+        display: inline-block;
+
+        transition: all 0.3s ease;
+        position: absolute;
+        top: calc(94% + 10px);
+        left: 10px;
+    }
+
+    .btn {
+        background: #3385ff;
+        border: none;
+    }
+
+    .btn:hover {
+        background: #0066ff;
+    }
+
+    ul.numbered-list {
+        list-style-type: decimal;
+    }
+    @media screen and (max-width:600px) {
+        .bottom-next{
+            top: calc(93% + 10px);
+        }
+        .bottom-previous{
+            top: calc(93% + 10px);
+        }
+    }
+</style>
+
+<body id="top">
+    <h1>The Features of JAVA Programming Language</h1>
+    <ul>
+        <li>Simple</li>
+        <li>Object-oriented</li>
+        <li>Portable</li>
+        <li>Platform Independent</li>
+        <li>Secured</li>
+        <li>Robust (refers to the quality of being strong)</li>
+        <li>Architecture neutral</li>
+        <li>Interpreted</li>
+        <li>High performance</li>
+        <li>Multithreaded</li>
+        <li>Distributed</li>
+        <li>Dynamic</li>
+    </ul>
+
+    <div class="separator" style="clear: both;"><a
+            href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFfDsWLJ5XDuH7daKb2TGAsJzqwLkqebu6rycjz96eKzZV8y8xM9Ory5EsiDVwUokQWUIiGqvPMHLiZqDDlJWbEF-i5LUi1blDEeiBdKIAt0TNVWxFVuIqGg9n-zoFhcrLdkyxCyxuRKQOurEaP7_oSX6zhPupd5l0wxNGsF6BH70qkpsrDuOvjpDyog/s1134/feautures%20of%20JAVA.jpg"
+            style="display: block; padding: 1em 0px; text-align: center;"><img alt="" border="0"
+                data-original-height="500" data-original-width="500"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFfDsWLJ5XDuH7daKb2TGAsJzqwLkqebu6rycjz96eKzZV8y8xM9Ory5EsiDVwUokQWUIiGqvPMHLiZqDDlJWbEF-i5LUi1blDEeiBdKIAt0TNVWxFVuIqGg9n-zoFhcrLdkyxCyxuRKQOurEaP7_oSX6zhPupd5l0wxNGsF6BH70qkpsrDuOvjpDyog/s600/feautures%20of%20JAVA.jpg"
+                width="500" /></a></div>
+
+    <p>These are the features in the JAVA Programming Language. <br />For more explanation, please continue reading.</p>
+    <h2>Explination of Features in JAVA Programming Language</h2>
+    <h3>Simple</h3>
+    <p>Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun, Java
+        language is a simple programming language because:
+    <ul>
+        <li>Java syntax is based on C++ (so easier for programmers to learn it after C++).</li>
+        <li>Java has removed many complicated and rarely-used features, for example, explicit pointers, operator
+            overloading, etc.</li>
+        <li>There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java.
+        </li>
+    </ul>
+    </p>
+    <h3>Object-oriented</h3>
+    <p>Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we
+        organize our software as a combination of different types of objects that incorporates both data and behavior.
+        Basic concepts of OOPs are:
+    <ul class="numbered-list">
+      <li><a href="https://learnwithvaigandla.blogspot.com/2023/05/what-is-object-oriented-programming-in.html#object">Object</a></li>
+      <li><a href="https://learnwithvaigandla.blogspot.com/2023/05/what-is-object-oriented-programming-in.html#class">Class</a></li>
+        <li><a
+                href="https://learnwithvaigandla.blogspot.com/2023/05/what-is-object-oriented-programming-in.html#inheritance">Inheritance</a>
+        </li>
+        <li><a
+                href="https://learnwithvaigandla.blogspot.com/2023/05/what-is-object-oriented-programming-in.html#polymorphism">Polymorphism</a>
+        </li>
+        <li><a
+                href="https://learnwithvaigandla.blogspot.com/2023/05/what-is-object-oriented-programming-in.html#abstraction">Abstraction</a>
+        </li>
+        <li><a
+                href="https://learnwithvaigandla.blogspot.com/2023/05/what-is-object-oriented-programming-in.html#encapsulation">Encapsulation</a>
+        </li>
+    </ul>
+    </p>
+    <h3>Platform Independent</h3>
+    <p>Java is platform independent because it is different from other languages like C,C++, etc. which are compiled
+        into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or
+        software environment in which a program runs.<br>
+        <br>Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java
+        code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code
+        because it can be run on multiple platforms, i.e., Write Once and Run Anywhere (WORA).
+    </p>
+    <h3>Secured</h3>
+    <p>
+        Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:
+    <ul>
+        <li>No explicit pointer</li>
+        <li>Java Programs run inside a virtual machine sandbox</li>
+        <li>Classloader: Classloader in Java is a part of the Java Runtime Environment(JRE) which is used to load Java
+            classes into the Java Virtual Machine dynamically. It adds security by separating the package for the
+            classes of the local file system from those that are imported from network sources.</li>
+        <li>Bytecode Verifier: It checks the code fragments for illegal code that can violate access right to objects.
+        </li>
+        <li>Security Manager: It determines what resources a class can access such as reading and writing to the local
+            disk.</li>
+    </ul>
+    Java language provides these securities by default. Some security can also be provided by an application developer
+    explicitly through SSL, JAAS, Cryptography, etc.
+    </p>
+    <h3>Robust</h3>
+    <p>
+        Robust simply means strong. Java is robust because:
+    <ul>
+        <li>It uses strong memory management.</li>
+        <li>There is a lack of pointers that avoids security problems.</li>
+        <li>There is automatic garbage collection in java which runs on the Java Virtual Machine to get rid of objects
+            which are not being used by a Java application anymore.</li>
+        <li>There are exception handling and the type checking mechanism in Java. All these points make Java robust.
+        </li>
+    </ul>
+    </p>
+    <h3>Architecture neutral</h3>
+    <p>
+        Java is architecture neutral because there are no implementation dependent features, for example, the size of
+        primitive types is fixed.<br>
+        In C programming, int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for
+        64-bit architecture. However, it occupies 4 bytes of memory for both 32 and 64-bit architectures in Java.<br>
+
+    </p>
+    <h3>Interpreted</h3>
+    <p>JAVA code is compiled into bytecode, which is then interpreted by the JVM at runtime, providing flexibility and
+        enabling dynamic execution.
+    </p>
+    <h3>Portable</h3>
+    <p>
+        Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any
+        implementation.<br>
+    </p>
+    <h3>High performance</h3>
+    <p>Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to
+        native code. It is still a little bit slower than a compiled language (e.g., C++). Java is an interpreted
+        language that is why it is slower than compiled languages, e.g., C, C++, etc.</p>
+    <h3>Distributed</h3>
+    <p>Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used
+        for creating distributed applications. This feature of Java makes us able to access files by calling the methods
+        from any machine on the internet.</p>
+    <h3>Multi-threaded</h3>
+    <p>A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks
+        at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for
+        each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.</p>
+    <h3>Dynamic</h3>
+    <p>Java is a dynamic language. It supports dynamic loading of classes. It means classes are loaded on demand. It
+        also supports functions from its native languages, i.e., C and C++.
+        Java supports dynamic compilation and automatic memory management (garbage collection).
+    </p>
+
+
+
+    <button class="bottom-next btn" onclick="URLredirect1()">Next</button>
+    <button class="bottom-previous btn" onclick="URLredirect2()">Previous</button>
+<div class="card-wrapper">
+  <div class="card">
+    <div class="content">
+      <p class="heading">About JAVA</p>
+      <p class="para">Learn About JAVA and It's Origin<br>Java is an efficient powerful object-oriented language developed in the year of '1991'.</p>
+      <button class="btn" Onclick="URLredirect2()">Read more</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <p class="heading">OOP's in JAVA</p>
+      <p class="para">Object-oriented programming in Java is the most important feature in Java. There are different principals in oop's Concept</p>
+      <button class="btn" Onclick="URLredirect1()">Read more</button>
+    </div>
+  </div>
+</div>
+<button class="back-to-top" Onclick="scrollToTop()">Back to Top &#8593;</button>
+<br><br><br>
+
+<script>function URLredirect1() {
+  window.location.href = 'https://learnwithvaigandla.blogspot.com/2023/05/what-is-object-oriented-programming-in.html';
+}
+</script>
+<script>function URLredirect2() {
+  window.location.href = 'https://learnwithvaigandla.blogspot.com/2023/01/test.html';
+}
+</script>
+<script>
+    function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+</script>
+</body>

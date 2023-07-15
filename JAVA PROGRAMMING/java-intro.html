@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="A Comprehensive Guide to Java and Its Applications: Exploring the Versatility of Java Programming - learnwithvaigandla">
+          <!-- Google tag (gtag.js) -->
+          <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L1VGLFBGV7"></script>
+          <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag() { dataLayer.push(arguments); }
+              gtag('js', new Date());
+      
+              gtag('config', 'G-L1VGLFBGV7');
+          </script>
+      </head>
+      <br>
+      <button class="top-next btn" Onclick="URLredirect1()">Next</button>
+      <style>
+          /*card wraps*/
+          .card-wrapper {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 20px;
+              margin-bottom: 15px;
+          }
+      
+          .card {
+              flex: 1 1 150px;
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+              padding: 32px;
+              overflow: hidden;
+              border-radius: 10px;
+              transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+          }
+      
+          .content {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 10px;
+              color: black;
+              transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+          }
+      
+          .content .heading {
+              font-weight: 700;
+              font-size: 32px;
+          }
+      
+          .content .para {
+              line-height: 1.5;
+          }
+      
+          .content .btn {
+              color: #e8e8e8;
+              text-decoration: none;
+              padding: 10px;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+              border-radius: 5px;
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          }
+      
+          .card::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 5px;
+              background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+              z-index: -1;
+              transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+          }
+      
+          .card:hover::before {
+              height: 100%;
+          }
+      
+          .card:hover {
+              box-shadow: none;
+          }
+      
+          .card:hover {
+              color: #212121;
+              background: #e8e8e8;
+          }
+      
+          .content .btn:hover {
+              outline: 2px solid #e8e8e8;
+              background: #666666;
+              color: #e8e8e8;
+          }
+      
+          .content .btn:active {
+              box-shadow: none;
+          }
+      
+          /*Top Next btn*/
+          .top-next {
+              width: 100px;
+              height: 40px;
+              color: #fff;
+              border-radius: 5px;
+              padding: 10px 25px;
+              font-weight: 500;
+              background: transparent;
+              cursor: pointer;
+              outline: none;
+              font-size: 20px;
+              display: inline-block;
+      
+              transition: all 0.3s ease;
+              position: absolute;
+              top: calc(2.5% + 10px);
+              right: 10px;
+          }
+      
+          .btn {
+              background: #3385ff;
+              border: none;
+          }
+      
+          .btn:hover {
+              background: #0066ff;
+          }
+      
+          /*Bottom Next btn*/
+          .bottom-next {
+              width: 100px;
+              height: 40px;
+              color: #fff;
+              border-radius: 5px;
+              padding: 10px 25px;
+              font-weight: 500;
+              background: transparent;
+              cursor: pointer;
+              outline: none;
+              font-size: 20px;
+              display: inline-block;
+      
+              transition: all 0.3s ease;
+              position: absolute;
+              top: calc(91% + 10px);
+              right: 10px;
+          }
+      
+          .btn {
+              background: #3385ff;
+              border: none;
+          }
+      
+          .btn:hover {
+              background: #0066ff;
+          }
+      
+          /*Bottom previous-btn*/
+          .bottom-previous {
+              width: 150px;
+              height: 40px;
+              color: #fff;
+              border-radius: 5px;
+              padding: 10px 25px;
+              font-weight: 500;
+              background: transparent;
+              cursor: pointer;
+              outline: none;
+              font-size: 20px;
+              display: inline-block;
+      
+              transition: all 0.3s ease;
+              position: absolute;
+              top: calc(91% + 10px);
+              left: 10px;
+          }
+      
+          .btn {
+              background: #3385ff;
+              border: none;
+          }
+      
+          .btn:hover {
+              background: #0066ff;
+          }
+      
+          ul.numbered-list {
+              list-style-type: decimal;
+          }
+      
+          @media screen and (max-width:600px) {
+              .bottom-next {
+                  top: calc(90% + 10px);
+              }
+      
+              .bottom-previous {
+                  top: calc(90% + 10px);
+              }
+          }
+      </style>
+      
+      <body id="top">
+          <div>
+              <h1 id="top" style="text-align: left;"><span style="font-size: x-large;">&nbsp;<b>What is Java?</b></span></h1>
+              <p>Java is a Widely-used Programming language for coding web applications. It has been a popular choice among
+                  developers, with millions of Java applications in use today. Java is a multi-platform, object-oriented, and
+                  network-centric language that can be used as a platfrom in itself. It is fast, secure, reliable programming
+                  language
+                  for coding everything from mobile application , web applications and standalone applications to enterprise
+                  softwares.</p>
+          </div>
+          <div>
+              <h1 style="text-align: left;">History of Java</h1>
+              <p></p>
+              <ul style="text-align: left;">
+                  <li>Java is an efficient powerful Object-Oriented Programming language developed in the year of 1991 by
+                      James
+                      Gosling and his team members at Sun micro systems.</li>
+                  <li>James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991. The
+                      small
+                      team of sun engineers called Green Team.</li>
+                  <li>Initially Java is called with a name Oak is a symbol of strength and choosen as a national tree of many
+                      countries like U.S.A., France, Germany, Romania etc.</li>
+                  <li>In 1995, Oak was renamed as "Java" .</li>
+                  <li>Java is an island of Indonesia where first coffee was produced (called java coffee).</li>
+                  <li>Sun micro systems purchased by Oracle Corporation in the year of 2010.</li>
+                  <li>JDK (Java Development tool Kit) 1.0 released in (January 23, 1996)</li>
+              </ul>
+              <p></p>
+          </div>
+          <div>
+              <h1 style="text-align: left;">what is Java programming language used for?</h1>
+              <h3 style="text-align: left;">1. Game Development</h3>
+              <p style="text-align: left;">Many popular mobile, computer and video games are built in Java. Even modern games
+                  that
+                  intergrate advanced technology like machine learning or virtual reality are built with Java technology.</p>
+              <p style="text-align: left;">Even the most popular game 'Minecraft' also designed using Java. Java has a crucial
+                  role in
+                  the game, It is helps to handle the user interface, multiplayer networking, and item handling e.t.c..</p>
+              <h3 style="text-align: left;">2. Cloud computing</h3>
+              <p style="text-align: left;">Java is often refferred to as WORA - Write Once and Run Anywhere, making it perfect
+                  for
+                  decentralized cloud-based applications. Cloud providers choose Java language to run programs on a wide range
+                  of
+                  underlying platforms.</p>
+              <p style="text-align: left;">Some of well know companies like Google, Amazon, Microsoft and IBM uses the Java in
+                  their
+                  cloud computing services. Java is one of the supported programming languages for writing severless
+                  functions.</p>
+              <h3 style="text-align: left;">3. Big Data</h3>
+              <p style="text-align: left;">Java is used for data processing engines that can work with complex data sets and
+                  massive
+                  amounts of real-time data. Java is used process the large data sets. Using Java file distributed systems
+                  also
+                  developed.</p>
+              <h3 style="text-align: left;">4. Artificial Intelligence</h3>
+              <p style="text-align: left;">Java is the house of machine learning libraries. Its stability and speed make it
+                  perfect
+                  for artifical intelligence application development like natural language processing(NLP) and deep learning
+              </p>
+              <h4 style="text-align: left;">List of Java libraries:-</h4>
+              <p style="text-align: left;">1. Deepleaning4j</p>
+              <p style="text-align: left;">2.&nbsp;Apache OpenNLP</p>
+              <p style="text-align: left;">3.&nbsp;Stanford CoreNLP</p>
+              <p style="text-align: left;">4. Weka</p>
+              <p style="text-align: left;">5. MOA(Massive online analysis)</p>
+              <h3 style="text-align: left;">5. Internet of Things(IoT)</h3>
+              <p style="text-align: left;">Java has been used to program sensors and hardware in edge devices that can connect
+                  independently to the internet. It helps in&nbsp;connecting various physical devices and objects to the
+                  internet,
+                  enabling them to communicate and interact with each other.</p>
+              <p style="text-align: left;">Java provides frameworks and libraries for sensor integration, Edge computing, and
+                  connectivity &amp; protocols and cloud integration.</p>
+              <h3 style="text-align: left;">6. Web Applications</h3>
+              <p>Java is widely used in the development of web applications, powering numerous popular websites and online
+                  platforms.
+                  It offers a range of features and frameworks that make it well-suited for web application development.&nbsp;
+              </p>
+              <h4 style="text-align: left;">Here's how Java is utilized in the context of web applications:</h4>
+              <p style="text-align: left;">1. Server-side Development</p>
+              <p style="text-align: left;">2. Enterprise Applications&nbsp;</p>
+              <p style="text-align: left;">3. Servlets and JavaServer Pages</p>
+              <p style="text-align: left;">4. Content Management Systems (CMS)</p>
+              <p>5. E-commerce Platforms</p>
+              <p>6. Web-services</p>
+              <p>Extensive ecosystem of libraries, frameworks, and tools make it a popular choice for web application
+                  development. Its
+                  usage in prominent websites like IRCTC (Indian Railway Catering and Tourism Corporation)</p>
+          </div>
+      
+          <button class="bottom-next btn" onclick="URLredirect1()">Next</button>
+          <button class="bottom-previous btn" onclick="URLredirect2()">Previous</button>
+          <div class="card-wrapper">
+              <div class="card">
+                  <div class="content">
+                      <p class="heading">Features of JAVA</p>
+                      <p class="para">There is given many features of java.They are also known as java buzzwords. The Java
+                          Features given below are simple and easy to understand.</p>
+                      <button class="btn" Onclick="URLredirect1()">Read more</button>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="content">
+                      <p class="heading">OOP's JAVA </p>
+                      <p class="para">Object-oriented programming in Java is the most important feature in Java. There are
+                          different principals in oop's Concept</p>
+                      <button class="btn" Onclick="URLredirect2()">Read more</button>
+                  </div>
+              </div>
+          </div>
+          <button class="back-to-top" Onclick="scrollToTop()">Back to Top &#8593;</button>
+          <br><br><br>
+      
+          <script>function URLredirect1() {
+                  window.location.href = 'https://learnwithvaigandla.blogspot.com/2023/05/features-of-java.html';
+              }
+          </script>
+          <script>function URLredirect2() {
+                  window.location.href = 'https://learnwithvaigandla.blogspot.com/2023/05/what-is-object-oriented-programming-in.html';
+              }
+          </script>
+          <script>
+              function scrollToTop() {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+      
+          </script>
+      </body>
+</html>
