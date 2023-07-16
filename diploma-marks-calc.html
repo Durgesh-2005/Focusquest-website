@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FonstAwsome-->
+    <script src="https://kit.fontawesome.com/be1c87c3f5.js" crossorigin="anonymous"></script>
+    <title>AP-Diploma Percentage Calculator</title>
+</head>
+
+<body>
+    <style>
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0px auto;
+            padding: 20px;
+        }
+
+        #marksCalc {
+            padding: 30px;
+            border-radius: 5px;
+            max-width: 500px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+
+        #marksCalc section {
+            margin-bottom: 20px;
+        }
+
+        #marksCalc label {
+            display: block;
+            color: #333;
+        }
+
+        #marksCalc input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        /* Style the submit button */
+        #marksCalc button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #marksCalc button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: #b4b1b1;
+            text-align: left;
+            padding: 10px;
+        }
+
+        tbody td {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f0eaea;
+        }
+
+        tbody td:nth-child(1) {
+            background-color: #b4b1b1;
+        }
+
+        .printBtn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 700px;
+            ;
+            width: 100px;
+        }
+
+        @media print {
+            #marksCalc section {
+                display: none;
+            }
+
+
+            /* Additional styles for table */
+            table {
+                margin: 20px auto;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            tbody td {
+                border-bottom: 1px solid #ddd;
+                padding: 10px;
+                min-height: 40px;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                font-size: 15px;
+            }
+
+            thead th {
+                background-color: #f2f2f2;
+                color: #333;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            #result {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    <h1>AP Diploma Final Percentage Calculator</h1>
+    <div class="card">
+        <form id="marksCalc" method="post">
+            <section>
+                <label for="1stSem">Enter Your 1st Year Marks:</label>
+                <input type="number" name="" id="1stSem" max="1000" placeholder="Enter Marks" value="">
+            </section>
+            <section>
+                <label for="3rdSem">Enter Your 3rd Sem Marks:</label>
+                <input type="number" name="" id="3rdSem" max="900" placeholder="Enter Marks" value="">
+            </section>
+            <section>
+                <label for="4thSem">Enter You 4th Sem Marks: </label>
+                <input type="number" name="" id="4thSem" max="900" placeholder="Enter Marks" value="">
+            </section>
+            <section>
+                <label for="5thSem">Enter You 5th Sem Marks: </label>
+                <input type="number" name="" id="5thSem" max="900" placeholder="Enter Marks" value="">
+            </section>
+            <section>
+                <label for="6thSem">Enter You 6th Sem Marks: </label>
+                <input type="number" name="" id="6thSem" max="300" placeholder="Enter Marks" value="">
+            </section>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="result">
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Examination</th>
+                    <th rowspan="2">Max. Marks</th>
+                    <th rowspan="2">Marks Secured</th>
+                    <th colspan="2">Marks taken into Consideration for Award of Class</th>
+                </tr>
+                <tr>
+                    <th>(in Figures)</th>
+                    <th>(In Words)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>I Year</td>
+                    <td>1000</td>
+                    <td id="1stSemSecured">-</td>
+                    <td id="1stSemFigure">-</td>
+                    <td id="1stSemWord">-</td>
+                </tr>
+                <tr>
+                    <td>III Semester</td>
+                    <td>900</td>
+                    <td id="3rdSemSecured">-</td>
+                    <td id="3rdSemFigure">-</td>
+                    <td id="3rdSemWord">-</td>
+                </tr>
+                <tr>
+                    <td>IV Semester</td>
+                    <td>900</td>
+                    <td id="4thSemSecured">-</td>
+                    <td id="4thSemFigure">-</td>
+                    <td id="4thSemWord">-</td>
+                </tr>
+                <tr>
+                    <td>V Semester</td>
+                    <td>900</td>
+                    <td id="5thSemSecured">-</td>
+                    <td id="5thSemFigure">-</td>
+                    <td id="5thSemWord">-</td>
+                </tr>
+                <tr>
+                    <td>VI Semester</td>
+                    <td>300</td>
+                    <td id="6thSemSecured">-</td>
+                    <td id="6thSemFigure">-</td>
+                    <td id="6thSemWord">-</td>
+                </tr>
+                <tr>
+                    <td>Total Marks in Figure</td>
+                    <td colspan="2"></td>
+                    <td id="totalMarks">-</td>
+                    <td id="totalWord">-</td>
+                </tr>
+                <tr>
+                    <td>Percentage of Marks(%)</td>
+                    <td id="totalPercentage">-</td>
+                    <td colspan="3"></td>
+
+                </tr>
+            </tbody>
+        </table>
+        <button id="printButton" class="printBtn" onclick="printTable()">Print <i class="fa-solid fa-print"
+                style="color: #ffffff;"></i></button>
+    </div>
+    <script>
+        document.getElementById("marksCalc").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission from refreshing the page
+
+            function numberToWord(number) {
+                const words = ["ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"];
+                const numberString = number.toString();
+                const digits = numberString.split("");
+                const result = digits.map(digit => words[parseInt(digit)]);
+                return result.join(" ");
+            }
+
+            let firstYear = parseFloat(document.getElementById("1stSem").value);
+            let thirdSem = parseFloat(document.getElementById("3rdSem").value);
+            let fourthSem = parseFloat(document.getElementById("4thSem").value);
+            let fifthSem = parseFloat(document.getElementById("5thSem").value);
+            let sixthSem = parseFloat(document.getElementById("6thSem").value);
+
+            // Validate if all fields are filled with valid numbers
+            if (isNaN(firstYear) || isNaN(thirdSem) || isNaN(fourthSem) || isNaN(fifthSem) || isNaN(sixthSem)) {
+                alert("Please fill in all fields with valid numbers before submitting.");
+                return;
+            }
+            let firstSem = Math.round(firstYear);
+            let divider = 4;
+            firstYear = firstYear / divider;
+            let finalResult = firstYear + thirdSem + fourthSem + fifthSem + sixthSem;
+            finalResult = Math.round(finalResult);
+            let maxMarks = 3250;
+            let Percentage = finalResult / maxMarks * 100;
+            //Marks Secured
+            document.getElementById("1stSemSecured").innerHTML = firstSem;
+            document.getElementById("3rdSemSecured").innerHTML = thirdSem;
+            document.getElementById("4thSemSecured").innerHTML = fourthSem;
+            document.getElementById("5thSemSecured").innerHTML = fifthSem;
+            document.getElementById("6thSemSecured").innerHTML = sixthSem;
+            //Marks Considered
+            document.getElementById("1stSemFigure").innerHTML = (firstYear + "(25%)");
+            document.getElementById("3rdSemFigure").innerHTML = (thirdSem + "(100%)");
+            document.getElementById("4thSemFigure").innerHTML = (fourthSem + "(100%)");
+            document.getElementById("5thSemFigure").innerHTML = (fifthSem + "(100%)");
+            document.getElementById("6thSemFigure").innerHTML = (sixthSem + "(100%)");
+            //Marks in Words
+            document.getElementById("1stSemWord").innerHTML = numberToWord(firstYear);
+            document.getElementById("3rdSemWord").innerHTML = numberToWord(thirdSem);
+            document.getElementById("4thSemWord").innerHTML = numberToWord(fourthSem);
+            document.getElementById("5thSemWord").innerHTML = numberToWord(fifthSem);
+            document.getElementById("6thSemWord").innerHTML = numberToWord(sixthSem);
+            //Total Marks
+            document.getElementById("totalWord").innerHTML = numberToWord(finalResult);
+            document.getElementById("totalMarks").innerHTML = finalResult;
+            document.getElementById("totalPercentage").innerHTML = (Percentage.toFixed(2) + "%");
+
+        });
+    </script>
+    <script>
+        document.getElementById("marksCalc").reset();
+        function printTable() {
+            // Hide the input fields and labels
+            document.getElementById("marksCalc").style.display = "none";
+            document.getElementById("printButton").style.display = "none";
+
+            // Print only the table
+            window.print();
+
+            // Show the input fields and labels again after printing
+            document.getElementById("marksCalc").style.display = "block";
+            document.getElementById("printButton").style.display = "block";
+
+        }
+    </script>
+</body>
+
+</html>
