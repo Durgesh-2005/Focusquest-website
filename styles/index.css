@@ -69,7 +69,14 @@
 .movingcontent{
     max-height: 490px;
     overflow-y: auto;
-}
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .movingcontent::-webkit-scrollbar{
+    width: 0;
+  }
+
 * {
   box-sizing: border-box;
 }
