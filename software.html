@@ -2,42 +2,49 @@
 <html>
 
 <head>
+  <!-- Meta information -->
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- External stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="./styles/common.css">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/navbar.css">
   <link rel="stylesheet" href="./styles/software.css">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/images/Logo.svg">
+
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8930077947690409"
     crossorigin="anonymous"></script>
-  <!-- Google tag (gtag.js) -->
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8W54VYDGZ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-L8W54VYDGZ');
   </script>
 
-
+  <!-- Page title -->
   <title>Focusquest</title>
 </head>
 
 <body>
   <section class="home-main">
+    <!-- Navigation Bar -->
     <nav>
       <div class="brand">
         <img src="./images/Logo.svg" alt="LOGO">
-        <a herf="/">Focusquest</a>
+        <a href="/">Focusquest</a>
       </div>
-
-      <i class="fa fa-bars" style="color: rgb(255, 255, 255);" style="color: rgb(0, 0, 0);" aria-hidden="true"></i>
+      <i class="fa fa-bars" style="color: rgb(255, 255, 255);"></i>
       <ul>
         <i class="fa fa-times" aria-hidden="true"></i>
         <li><a href="INDEX.html">Home</a></li>
@@ -49,6 +56,7 @@
       </ul>
     </nav>
     <div class="container">
+      <!-- Left Menu -->
       <div class="leftmenu" id="leftmenu">
         <h4>Java Programming</h4>
         <a id="intro">Intro</a>
@@ -60,40 +68,34 @@
         <a id="comments">Comments in Java</a>
         <a variables>Variables in Java</a>
       </div>
-
-
-
-
-
-      <div class="java-content" id="content">
-
-      </div>
+      <!-- Content Area -->
+      <div class="java-content" id="content"></div>
     </div>
-    </div>
+  </section>
+  <!-- Copyright Information -->
+  <div class="copyright">
+    &copy; All rights reserved by Focusquest-2023<br>
+    Made with &hearts; by Durgesh<br>
+  </div>
+  <!-- External Scripts -->
+  <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+  <script src="./js/navbar.js"></script>
+  <!-- Dynamic Content Loading -->
+  <script>
+    // Fetch the content of java-intro.html and insert it into the #content element
+    const javaContent = document.getElementById("content");
+    const Intro = document.getElementById("intro");
+    fetch('JAVA PROGRAMMING/java-intro.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('content').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
 
-    <!--<div class="container mt-3">
-  <h4>Java Programming</h4>
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-  </ul>
-</div>-->
-
-    <script>
-      // Fetch the content of java-intro.html and insert it into the #content element
-      const javaContent = document.getElementById("content");
-      const Intro = document.getElementById("intro");
-
+    // Event listener for loading Introduction content
+    Intro.addEventListener("click", () => {
       fetch('JAVA PROGRAMMING/java-intro.html')
         .then(response => response.text())
         .then(data => {
@@ -102,39 +104,21 @@
         .catch(error => {
           console.error('Error:', error);
         });
+    });
 
-      Intro.addEventListener("click", () => {
-        fetch('JAVA PROGRAMMING/java-intro.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('content').innerHTML = data;
-          })
-          .catch(error => {
-            console.error('Error:', error);
-          });
-
-      })
-
-      const Features = document.getElementById("features");
-
-      Features.addEventListener("click", () => {
-        fetch('JAVA PROGRAMMING/features-of-java.html')
-          .then(response => response.text())
-          .then(data => {
-            javaContent.innerHTML = data;
-          })
-          .catch(error => {
-            console.error('Error:', error);
-          });
-      })
-    </script>
-
-    <div class="copyright">
-      &copy;All rights reserved by Focusquest-2023<br>
-      Made with &hearts; by Durgesh<br>
-    </div>
-    <script src=”https://www.jdoodle.com/assets/jdoodle-pym.min.js” type=”text/javascript”></script>
-    <script src="./js/navbar.js"></script>
+    // Event listener for loading Features of Java content
+    const Features = document.getElementById("features");
+    Features.addEventListener("click", () => {
+      fetch('JAVA PROGRAMMING/features-of-java.html')
+        .then(response => response.text())
+        .then(data => {
+          javaContent.innerHTML = data;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    });
+  </script>
 </body>
 
 </html>

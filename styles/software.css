@@ -73,3 +73,7 @@
 .java-content::-webkit-scrollbar {
     width: 0;
 }
+
+.java-content li{
+    margin-left: 35px;
+}
